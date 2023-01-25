@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="aos-master/dist/aos.css">
+  <style>
+    nav {
+      background: rgba(226, 187, 155, 0.589);
+
+    }
+
+    .hero {
+      height: calc(100vh - 70px);
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/home-bg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-attachment: fixed;
+    }
+
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    @media (max-width:425px) {
+      .mycontainer {
+        text-align: center;
+      }
+    }
+
+    @media (max-width:425px) {
+      .menu {
+        text-align: center;
+      }
+    }
+
+    .image {
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+
+    }
+
+    .hover {
+      width: 100%;
+      height: 100%;
+      background: rgba(245, 222, 179, 0.5);
+      position: absolute;
+      top: -100%;
+      left: 0;
+      transition: 0.2s;
+    }
+
+    .image:hover .hover {
+      top: 0;
+    }
+    .image2{
+      position: relative;
+      height: 89%;
+      overflow: hidden;
+    }
+    .rightform{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    form,
+    input{
+      width: 100%;
+    }
+    input{
+      border-radius: 6px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+      <img src="images/logo.png" width="40px" alt="" style="cursor: pointer;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#menu">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link active" href="#menu2" tabindex="-1" aria-disabled="true">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#gallery" tabindex="-1" aria-disabled="true">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#team" tabindex="-1" aria-disabled="true">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact" tabindex="-1" aria-disabled="true">Contact Us</a>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <section class="hero" id="hero">
+    <div class="container mycontainer " data-aos="fade-left" data-aos-duration="2000">
+      <h1 style="color: white;">Coffee Heaven</h1>
+      <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nostrum?</p>
+      <Button style="background: rgb(90 57 41); color: rgb(245, 222, 179); font-size:30px; border: none">Read
+        More</Button>
+    </div>
+
+  </section>
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="row mt-3">
+        <div class="col-md-6">
+          <img src="images/about-img.svg" alt="">
+        </div>
+        <div class="col-md-6 right">
+          <h1>A CUP OFF COFFEE</h1>
+          <h3>CAN MAKE YOUR DAY EVEN BETTER!</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam vel amet sint ullam dolor possimus
+            dicta doloribus sit inventore, tempore illum itaque odit cupiditate, reiciendis accusamus velit maxime
+            exercitationem!</p>
+          <Button style="background: rgb(90 57 41); color: rgb(245, 222, 179); font-size:30px; border: none">Our
+            Menu</Button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="faculty" id="faculty">
+    <div class="container">
+      <div class="fi text-center">
+        <img src="images/heading-img.png" alt="" width="20%">
+        <h3>OUR FACILITY</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img src="images/icon-1.png" alt="">
+          <h4>VARIETY OF COFFEES</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="images/icon-2.png" alt="">
+          <h4>COFFEE BEANS</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="images/icon-3.png" alt="">
+          <h4>BREAKFAST</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="images/icon-4.png" alt="">
+          <h4>READY TO GO</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="menu2" id="menu2">
+    <div class="container">
+      <div class="fi text-center">
+        <img src="images/heading-img.png" alt="" width="20%">
+        <h3>POPULAR MENU</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="images/menu-1.png" alt="" width="50%">
+          <p>Love You Coffee</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/menu-2.png" alt="" width="50%">
+          <p>Love You Coffee</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/menu-3.png" alt="" width="50%">
+          <p>Love You Coffee</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="images/menu-4.png" alt="" width="50%">
+          <p>Love You Coffee</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/menu-5.png" alt="" width="50%">
+          <p>Love You Coffee</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/menu-6.png" alt="" width="50%">
+          <p>Love You Coffee</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery" id="gallery">
+    <div class="container">
+      <div class="fi text-center">
+        <img src="images/heading-img.png" alt="" width="20%">
+        <h3>GALLERY</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="image">
+            <img src="images/gallery-1.webp" alt="" width="100%" height="100%">
+            <div class="hover"></div>
+          </div>
+          </div>
+          <div class="col-md-4">
+           <div class="image2">
+            <div class="image">
+              <img src="images/gallery-2.webp" alt="" width="100%" height="100%">
+              <div class="hover"></div>
+            </div>
+           </div>
+          </div>
+
+          <div class="col-md-4 ">
+            <div class="image">
+            <img src="images/gallery-3.webp" alt="" width="100%" height="100%">
+            <div class="hover"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="contaner">
+        <div class="row">
+          <div class="col-md-4 ">
+            <div class="image">
+            <img src="images/gallery-4.webp" alt="" width="100%" height="100%">
+            <div class="hover"></div>
+          </div>
+          </div>
+          <div class="col-md-4">
+            <div class="image">
+            <img src="images/gallery-5.webp" alt="" width="100%" height="100%">
+            <div class="hover"></div>
+          </div>
+          </div>
+          <div class="col-md-4 ">
+           <div class="image">
+            <img src="images/gallery-6.webp" alt="" width="100%" height="100%">
+            <div class="hover"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <section class="team" id="team">
+    <div class="container">
+      <div class="fi text-center mt-3">
+        <img src="images/heading-img.png" alt="" width="20%">
+        <h3>OUR TEAM</h3>
+      </div>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="images/our-team-1.jpg" alt="" width="100%">
+          <h5>John Deo</h5>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/our-team-2.jpg" alt="" width="100%">
+          <h5>John Deo</h5>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/our-team-3.jpg" alt="" width="100%">
+          <h5>John Deo</h5>
+        </div>
+
+      </div>
+    </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <img src="images/our-team-4.jpg" alt="" width="100%">
+          <h5>John Deo</h5>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/our-team-5.jpg" alt="" width="100%">
+          <h5>John Deo</h5>
+        </div>
+        <div class="col-md-4 text-center">
+          <img src="images/our-team-6.jpg" alt="" width="100%">
+          <h5>John Deo</h5>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="pic-contact text-center">
+        <img src="images/heading-img.png" alt="" width="20%">
+        <h3>Contact Us</h3>
+        <Button  data-bs-toggle="modal" data-bs-target="#exampleModal" style="background: rgb(90 57 41); color: rgb(245, 222, 179); font-size:30px; border: none;">Reach
+          Us</Button>
+          <!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-cenntered">
+    <div class="modal-content">
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      <img src="images/contact-img.svg" alt="">
+    </div>
+    <div class="col-md-7 rightform">
+      <form action="">
+        <div class="mt-2">
+          <input type="text" placeholder="Enter Your Name">
+        </div>
+        <div class="mt-2">
+          <input type="text" placeholder="Enter Your Email">
+        </div>
+        <div class="mt-2">
+          <input type="text" placeholder="Enter Message">
+        </div>
+        <input type="Button" value="Submit" class="mt-3">
+      </form>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+        </div>
+    </div>
+
+  </section>
+</body>
+<script src="aos-master/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</html>
